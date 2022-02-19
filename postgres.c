@@ -220,7 +220,7 @@ char *sql_where_in(char **list)
   if (list == NULL)
     return NULL;
   for (i = 0 ; list[i] != NULL ; i++)
-    len += strlen(list[i]) + 10;
+      len += strlen(list[i]) + 10;
   s = malloc(len + 1);
   strcpy(s, "(");
   for (i = 0 ; list[i] != NULL ; i++) {
