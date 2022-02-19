@@ -12,6 +12,7 @@
 #include <fcntl.h>
 #include "htools.h"
 
+
 int pos(char *s, int c)
 {
   register int i = 0;	
