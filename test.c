@@ -192,7 +192,7 @@ int main(int argc, char **argv)
                 continue;
             }
             for (i = 0; i < d->no_of_files; i++) {
-                printf("%-15.15s %8d\n", d->fl[i].name, d->fl[i].stat.st_size);
+                printf("%-15.15s %8ld\n", d->fl[i].name, d->fl[i].stat.st_size);
             }
             freedir(d);
         }
