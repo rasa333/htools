@@ -1,7 +1,7 @@
 CC             = gcc
 CFLAGS         = -O3 -Wunused -I/var/storage/postgres/include -fgnu89-inline -fcommon -Wstringop-overflow=0
 LDFLAGS        = -L. # -static
-LIBS           = -lm -ltermcap -lz
+LIBS           = -lm -ltermcap -lz -lpq
 objects	       = array.o dir.o file.o funcs.o input.o postgres.o signal.o tcap.o base64.o broker.o lock.o
 
 %.o : %.c $(wildcard *.h)
